@@ -1,7 +1,7 @@
 ADMIN_ID = 8251016419  
 PAYOUT_CHANNEL = -1004369617531
 
-bot = telebot.TeleBot(9147047095:AAFUXWKkXe29jDdOekLnggJL9ZFhK5tRqbA)
+bot = telebot.TeleBot("9147047095:AAFUXWKkXe29jDdOekLnggJL9ZFhK5tRqbA")
 conn = sqlite3.connect('bot.db', check_same_thread=False)
 conn.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, username TEXT, balance INTEGER DEFAULT 0)")
 conn.commit()
